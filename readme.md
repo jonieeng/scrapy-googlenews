@@ -5,7 +5,7 @@ This readme is originally made by [Hiroshi](https://github.com/GithubHM1) with s
     - Open files using VScode
     - Look for main googlenews folder in VScode
     - Open integrated terminal by right clicking the googlenews folder at the root
-    - Type the following `source .env/scripts/activate` for macOS or `cd .env/script` follow with `activate` on Windows
+    - Type the following `source .env/scripts/activate` for macOS or `cd .env/scripts` follow with `activate` on Windows
     - Type `cd googlenews` to go into googlenews folder inside the googlenews in the root
     - Try to run the the crawler by typing `scrapy crawl gnews`
         - If you encounter this problem: 
