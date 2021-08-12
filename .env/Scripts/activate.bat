@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\edwar\OneDrive\Website\Web-SandBox\scrapy-googlenews\.env
+set VIRTUAL_ENV=C:\Users\edwar\OneDrive\Edward\NUS-Fintech-Code\final-project\scrapy-googlenews\.env
 
 if not defined PROMPT set PROMPT=$P$G
 

@@ -1,4 +1,4 @@
-#!c:\users\edwar\onedrive\website\web-sandbox\scrapy-googlenews\.env\scripts\python.exe
+#!c:\users\edwar\onedrive\edward\nus-fintech-code\final-project\scrapy-googlenews\.env\scripts\python.exe
 
 import sys
 import json

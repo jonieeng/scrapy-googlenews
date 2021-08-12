@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\edwar\OneDrive\Website\Web-SandBox\scrapy-googlenews\.env"
+VIRTUAL_ENV="C:\Users\edwar\OneDrive\Edward\NUS-Fintech-Code\final-project\scrapy-googlenews\.env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
