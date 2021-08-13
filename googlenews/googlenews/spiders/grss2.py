@@ -1,6 +1,8 @@
 import scrapy
 from scrapy.spiders import XMLFeedSpider
 from googlenews.items import GooglenewsItem
+from scrapy.loader import ItemLoader
+
 
 class rssMode(XMLFeedSpider):
     name= 'rssnews2'
