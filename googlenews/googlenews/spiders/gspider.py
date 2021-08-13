@@ -1,16 +1,13 @@
 import scrapy
 
 class gSpider(scrapy.Spider):
-    name= 'hello'
-    start_urls = ['https://www.google.com/search?q=semiconductor&rlz=1C1ONGR_enSG933SG933&biw=1920&bih=969&tbm=nws&sxsrf=ALeKk03i0RNUCTt_bpisLK7yZ7HkhGHYDQ%3A1628702919250&ei=xwgUYf_TDpPgrQH_1qqoBg&oq=semiconductor&gs_l=psy-ab.3..0i433i131i67k1l2j0i67k1j0i433i131i67k1j0i512i433k1j0i512k1l5.3096.4756.0.4943.13.6.0.7.7.0.101.426.5j1.6.0....0...1c.1.64.psy-ab..0.13.446...0i433i131k1j0i512i433i131k1j0i433k1j0i433i67k1.0.gz4CnzvXmPU']
-
+    name= 'gnews'
+    start_urls = ['https://www.google.com/search?q=semiconductor+trends&sxsrf=ALeKk03-JfkEO9ENt0lstr0YA3CP8OADmQ%3A1628840838478&source=hp&ei=hiMWYejUGtXJ-gTGgLXgAg&iflsig=AINFCbYAAAAAYRYxljLcJ-u4xVutRWo7lWaNAA_vj-zI&oq=semiconductor+trends&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BAgjECc6BQgAEJECOgsIABCABBCxAxCDAToOCC4QsQMQgwEQxwEQowI6CAgAEIAEELEDOggILhCxAxCDAToLCC4QgAQQsQMQgwE6DgguEIAEELEDEMcBEKMCOhEILhCABBCxAxCDARDHARCvAToOCC4QgAQQsQMQxwEQ0QM6CwguEIAEEMcBEK8BOg4ILhCABBCxAxDHARCvAToRCC4QgAQQsQMQgwEQxwEQ0QM6CAguEIAEELEDOggIABCABBDJAzoFCAAQkgM6DgguEIAEEMcBEK8BEJMCOgsILhCABBDHARDRAzoFCC4QgARQvAdYyihgsiloAHAAeACAAUyIAeQIkgECMjCYAQCgAQE&sclient=gws-wiz&ved=0ahUKEwjor8j8wK3yAhXVpJ4KHUZADSwQ4dUDCAc&uact=5']
     def parse(self, response):
-        for articles in response.css('div.yr3B8d.KWQBje'):
+        for articles in response.css('div.tF2Cxc'):
             yield {
-                'title': articles.css('div.JheGif.nDgy9d::text').get(),
-                'excerpt':articles.css('div.Y3v8qd::text').get(),
-                'source':articles.css('div.XTjFC.WF4CUc::text').get(),
-                'date': articles.css('span.WG9SHc span::text').get()
+                'title': articles.css('h3.LC20lb.DKV0Md::text').get(),
+
             }
 
         nextPage = response.css('[id="pnnext"]').attrib['href']
