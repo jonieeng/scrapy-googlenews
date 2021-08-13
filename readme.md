@@ -1,21 +1,49 @@
-This readme is originally made by [Hiroshi](https://github.com/GithubHM1) with some revision
-
-1)	Fork this repository
-    - Download using ZIP function and then install the files onto your desktop
-    - Open files using VScode
-    - Look for main googlenews folder in VScode
-    - Open integrated terminal by right clicking the googlenews folder at the root
-    - Type the following `source .env/scripts/activate` for macOS or `cd .env/scripts` follow with `activate` on Windows
-    - Type `cd googlenews` to go into googlenews folder inside the googlenews in the root
-    - Try to run the the crawler by typing `scrapy crawl gnews`
-        - If you encounter this problem: 
-        > Import "scrapy could not be resolved Pylance(reportMissinhImports) [1,8]
-        - Install scrapy by typing `pip install scrapy`
-        - Run scrapy again by typing `scrapy crawl gnews` or if you want to save to a csv file type `scrapy crawl gnews -o filename.csv` where you cna change filename into other filename that you prefer.
+1) Fork Edward’s Github 
 2) Test the script 
 3) Run the script to make sure it works 
 4) Check Search engine search number corresponds with CSV download 
 5) Tweak different keywords to test
+
+
+
+
+
+	Open integrated Terminal from main googlenews folder
+	Type the following:
+source .env/scripts/activate
+
+	You may encounter the following problem
+ 
+
+HOW TO WEBCRAWL 
+Installing and run in VSC 
+ 
+Step 1: Download the zip file from Edward's Github (costhin/googlenews-scrapy) 
+ 
+Step 2: Open VSC, open the downloaded folder 
+ 
+Step 3: Go to googlenews folder, right click and choose 'open in integrated terminal'  
+Note: Make sure 'googlenews' is the root directory 
+ 
+ 
+Step 4: Ensure that you choose command prompt in Terminal.  
+Note: It doesn't work on Powershell, Bash etc 
+ 
+Step 5: Type the following source .env/scripts/activate for macOS or  
+cd .env/scripts follow with activate on Windows 
+ 
+Step 6: Type cd.. 
+Note: After this step, the directory WILL end with '.env' .. It should look like this:  'C:\Users\Cindy\Desktop\Scrapy.env' 
+ 
+Step 7: Type cd.. 
+Note: After this step, the directory WILL NOT end with '.env' .. It should look like this:  'C:\Users\Cindy\Desktop\Scrapy’ 
+ 
+Step 8: Type cd googlenews  
+ 
+Step 9: Try to run the crawler by typing scrapy crawl gnews  
+ 
+Step 10: Create a CSV file by typing scrapy crawl gnews -o filename.csv where you can     change the 'filename' into what you want. By running this step, web crawling begins     and the web crawling results will be stored into this CSV file 
+
         
 
 
