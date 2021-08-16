@@ -1,11 +1,27 @@
+version control:
+v0.4a
+- 3 files has been updated: 
+	- ADD googlenews/googlenews/spiders/gspider3.py
+	- REPLACE googlenews/googlenews/items.py
+	- REPLACE googlenews/googlenews/settings.py
+
+- Convert YM code into item loader and incorporate his date function via item loader
+- Add link column, to stay true to our old rss crawler
+- Rearrange the column so it's now will be : start,end,query,region,title,excerpt,date,source,link (let me know if there is better arrangement)
+
+v0.4
+v0.3a
+v0.3
+v0.2a
+v0.2
+v0.1
+<hr>
+
 1) Fork Edward’s Github 
 2) Test the script 
 3) Run the script to make sure it works 
 4) Check Search engine search number corresponds with CSV download 
 5) Tweak different keywords to test
-
-
-
 
 
 	Open integrated Terminal from main googlenews folder
