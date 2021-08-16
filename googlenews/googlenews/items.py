@@ -9,8 +9,13 @@ from itemloaders.processors import TakeFirst, MapCompose
 from w3lib.html import remove_tags
 
 def split_date(value):
-    hello = value.split()
-    return hello[1] + ' ' + hello[2] + ' ' + hello[3]
+    newdate = value.split()
+    return newdate[1] + ' ' + newdate[2] + ' ' + newdate[3]
+
+def strip_item(value):
+    excerpt = value.strip(",")
+    return excerpt
+
 
 class GooglenewsItem(scrapy.Item):
     # define the fields for your item here like:
@@ -20,4 +25,5 @@ class GooglenewsItem(scrapy.Item):
     date = scrapy.Field(input_processor = MapCompose(remove_tags, split_date), output_processor = TakeFirst())
     source = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
     link = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
+    excerpt = scrapy.Field(input_processor = MapCompose(strip_item), output_processor = TakeFirst())
     
