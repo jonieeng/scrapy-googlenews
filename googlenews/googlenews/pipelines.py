@@ -19,7 +19,7 @@ class GooglenewsPipeline:
             password='',
             host='',
             port=3306,
-            database='crawlerdb'
+            database=''
         )
 
         self.curr = self.conn.cursor()

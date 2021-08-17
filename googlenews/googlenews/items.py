@@ -38,7 +38,7 @@ def convert_month(value):
     new_date = old_date[2] + "-" + old_date[0] + "-" + old_date[1]
 
     return new_date
-    
+
 def convert_pubdate(value):
     modifier = 0
     old_date = value.split()
@@ -46,16 +46,16 @@ def convert_pubdate(value):
     today = datetime.date.today()
     date_reducer = datetime.timedelta(days = day_differences)
     if 'hour' in value or 'hours' in value:
-        new_date = (today - date_reducer).isoformat
+        new_date = (today - date_reducer).isoformat()
     elif 'day' in value or 'days' in value:
         modifier=1
-        new_date = (today - date_reducer).isoformat
+        new_date = (today - date_reducer).isoformat()
     elif 'week' in value or 'weeks' in value:
         modifier=7
-        new_date = (today - date_reducer).isoformat
+        new_date = (today - date_reducer).isoformat()
     elif 'month' in value or 'months' in value:
         modifier=30
-        new_date = (today - date_reducer).isoformat
+        new_date = (today - date_reducer).isoformat()
     else:
         new_date = old_date[2] + "-" + month[old_date[1]] + "-" + old_date[0]
     
