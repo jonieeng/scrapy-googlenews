@@ -1,4 +1,16 @@
 version control:
+v0.5
+- Crawl result is now sent to mySQL database
+- 3 files has been updated:
+	- REPLACE googlenews/googlenews/items.py
+	- REPLACE googlenews/googlenews/settings.py
+	- REPLACE googlenews/googlenews/pipelines.py
+
+- All date format on the result is changed to YYYY-MM-DD to comply with mySQL date format. Hence YM code on items.py is adjusted to convert date into accepted date format by mySQL
+- Latest command line:
+scrapy crawl gnews3 -a query=semiconductor -a start=1/1/2020 -a end=1/31/2020 -a region=US
+
+<hr>
 v0.4a
 - 3 files has been updated: 
 	- ADD googlenews/googlenews/spiders/gspider3.py
@@ -62,7 +74,7 @@ Step 9: Install scrapy by typing `pip install scrapy` <br>
  
 Step 10: Try to run the the crawler by typing `scrapy crawl gnews`.<br>
 
-Step 11: Create a CSV file by typing `scrapy crawl gnews -o filename.csv` where you can change the 'filename' into what you want. By running this step, web crawling begins and the web crawling results will be stored into this CSV file. <br>
+Step 11: Create a CSV file by typing `scrapy crawl gnews3 -a query=semiconductor -a start=1/1/2020 -a end=1/31/2020 -a region=GB -o hello22.csv` where you can change the 'filename' into what you want. By running this step, web crawling begins and the web crawling results will be stored into this CSV file. <br>
 
         
 
