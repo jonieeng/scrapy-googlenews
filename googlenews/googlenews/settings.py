@@ -65,9 +65,9 @@ FEED_EXPORT_FIELDS = [ 'start','end','query', 'region', 'title', 'excerpt', 'dat
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'googlenews.pipelines.GooglenewsPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'googlenews.pipelines.GooglenewsPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

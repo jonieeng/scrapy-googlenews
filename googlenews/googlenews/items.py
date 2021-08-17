@@ -15,18 +15,18 @@ import datetime
 #     return newdate[1] + ' ' + newdate[2] + ' ' + newdate[3]
 
 month={
-    "1":"Jan",
-    "2":"Feb",
-    "3":"Mar",
-    "4":"Apr",
-    "5":"May",
-    "6":"Jun",
-    "7":"Jul",
-    "8":"Aug",
-    "9":"Sep",
-    "10":"Oct",
-    "11":"Nov",
-    "12":"Dec"
+    "Jan":"1",
+    "Feb":"2",
+    "Mar":"3",
+    "Apr":"4",
+    "May":"5",
+    "Jun":"6",
+    "Jul":"7",
+    "Aug":"8",
+    "Sep":"9",
+    "Oct":"10",
+    "Nov":"11",
+    "Dec":"12"
 }
 
 def strip_item(value):
@@ -35,7 +35,7 @@ def strip_item(value):
 
 def convert_month(value):
     old_date = value.split("/")
-    new_date = old_date[1] + "-" + month[old_date[0]] + "-" + old_date[2]
+    new_date = old_date[2] + "-" + old_date[0] + "-" + old_date[1]
 
     return new_date
     
@@ -46,18 +46,18 @@ def convert_pubdate(value):
     today = datetime.date.today()
     date_reducer = datetime.timedelta(days = day_differences)
     if 'hour' in value or 'hours' in value:
-        new_date = (today - date_reducer).strftime('%d %b %Y')
+        new_date = (today - date_reducer).isoformat
     elif 'day' in value or 'days' in value:
         modifier=1
-        new_date = (today - date_reducer).strftime('%d %b %Y')
+        new_date = (today - date_reducer).isoformat
     elif 'week' in value or 'weeks' in value:
         modifier=7
-        new_date = (today - date_reducer).strftime('%d %b %Y')
+        new_date = (today - date_reducer).isoformat
     elif 'month' in value or 'months' in value:
         modifier=30
-        new_date = (today - date_reducer).strftime('%d %b %Y')
+        new_date = (today - date_reducer).isoformat
     else:
-        new_date = value
+        new_date = old_date[2] + "-" + month[old_date[1]] + "-" + old_date[0]
     
     return new_date
 
