@@ -28,8 +28,6 @@ class GooglenewsPipeline:
     def create_table(self):
         self.curr.execute("""CREATE TABLE IF NOT EXISTS semiconductor(
             id INT AUTO_INCREMENT PRIMARY KEY,
-            start DATE,
-            end DATE,
             query VARCHAR(255),
             region VARCHAR(2),
             title TEXT,
@@ -45,8 +43,6 @@ class GooglenewsPipeline:
     def store_db(self, item):
         myquery = """INSERT into semiconductor
         (
-            start,
-            end,
             query,
             region,
             title,
@@ -58,8 +54,6 @@ class GooglenewsPipeline:
         values(%s,%s,%s,%s,%s,%s,%s,%s,%s)
         """
         value = (
-            item["start"],
-            item["end"],
             item["query"][0],
             item["region"][0],
             item["title"],

@@ -18,8 +18,8 @@ class gSpider(scrapy.Spider):
             l.add_css('source','div.XTjFC.WF4CUc')
             l.add_css('date', 'span.WG9SHc span')
             l.add_value('query', self.query)
-            l.add_value('start', self.start)
-            l.add_value('end',self.end)
+            # l.add_value('start', self.start)
+            # l.add_value('end',self.end)
             l.add_value('region', self.region)
             l.add_css('link','a::attr(href)')
 

@@ -20,7 +20,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 ROBOTSTXT_OBEY = False
 
 # Column order
-FEED_EXPORT_FIELDS = [ 'start','end','query', 'region', 'title', 'excerpt', 'date', 'source', 'link' ]
+FEED_EXPORT_FIELDS = [ 'query', 'region', 'title', 'excerpt', 'date', 'source', 'link' ]
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

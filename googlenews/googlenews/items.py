@@ -33,11 +33,11 @@ def strip_item(value):
     excerpt = value.strip(",")
     return excerpt
 
-def convert_month(value):
-    old_date = value.split("/")
-    new_date = old_date[2] + "-" + old_date[0] + "-" + old_date[1]
+# def convert_month(value):
+#     old_date = value.split("/")
+#     new_date = old_date[2] + "-" + old_date[0] + "-" + old_date[1]
 
-    return new_date
+#     return new_date
 
 def convert_pubdate(value):
     modifier = 0
@@ -71,6 +71,6 @@ class GooglenewsItem(scrapy.Item):
     source = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
     link = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
     excerpt = scrapy.Field(input_processor = MapCompose(strip_item, remove_tags), output_processor = TakeFirst())
-    start = scrapy.Field(input_processor = MapCompose(convert_month), output_processor = TakeFirst())
-    end = scrapy.Field(input_processor = MapCompose(convert_month), output_processor = TakeFirst())
+    # start = scrapy.Field(input_processor = MapCompose(convert_month), output_processor = TakeFirst())
+    # end = scrapy.Field(input_processor = MapCompose(convert_month), output_processor = TakeFirst())
     
