@@ -2,7 +2,7 @@ import scrapy
 import datetime
 
 class gSpider(scrapy.Spider):
-    name= 'hello2'
+    name= 'gnews2'
 
     def start_requests(self):
         yield scrapy.Request(f'https://www.google.com/search?q={self.query}&rlz=1C1ONGR_en{self.region}933SG933&tbs=cdr:1,cd_min:{self.start},cd_max:{self.end},sbd:1&tbm=nws&sxsrf=ALeKk01aflpQNP1ZZ_T4be6c1j0AaGca-g:1629088758656&source=lnt&sa=X&ved=2ahUKEwiVoJHG3LTyAhUIA3IKHUJTA3gQpwV6BAgHECw&biw=1920&bih=969&dpr=1')
