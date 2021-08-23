@@ -1,4 +1,8 @@
 version control:
+v0.6
+gspider4.py
+allow extract using crawl within crawl from googlenews website
+
 v0.5
 - Crawl result is now sent to mySQL database
 - 3 files has been updated:
