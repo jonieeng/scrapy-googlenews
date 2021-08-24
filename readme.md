@@ -1,5 +1,5 @@
 version control:
-v0.6a - YM variant
+##### v0.6a - YM variant
 - File changes:
 	- ADD gspider6a.py
 	- REPLACE items.py
@@ -13,16 +13,17 @@ country (i.e. China, japan, russia, south+korea, united+states, etc)  **or**
 region (i.e. asia, europe, north+america, etc)
 
 <hr>
-v0.6  
+
+##### v0.6   
 - File changes:
-	- add gspider6.py
+	- ADD gspider6.py
 - allow extract using crawl within crawl from googlenews website
 - allow conditional to do crawl within crawl on request only  
-'scrapy crawl gnews4 -a query=semiconductor -a start=1/1/2020 -a end=1/31/2020 -a region=US -o hello24.csv`
+`scrapy crawl gnews4 -a query=semiconductor -a start=1/1/2020 -a end=1/31/2020 -a region=US -o hello24.csv`
 
 <hr>
 
-v0.5  
+##### v0.5  
 - Crawl result is now sent to mySQL database
 - 3 files has been updated:
 	- REPLACE googlenews/googlenews/items.py
@@ -34,7 +35,8 @@ v0.5
 scrapy crawl gnews3 -a query=semiconductor -a start=1/1/2020 -a end=1/31/2020 -a region=US
 
 <hr>
-v0.4a
+
+##### v0.4a
 - 3 files has been updated: 
 	- ADD googlenews/googlenews/spiders/gspider3.py
 	- REPLACE googlenews/googlenews/items.py
