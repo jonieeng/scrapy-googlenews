@@ -3,6 +3,7 @@ version control:
 - File changes:
 	- ADD gspider6a.py
 	- REPLACE items.py
+	- REPLACE settings.py
 - introduce excerpt2, excerpt3, and excerp4 -> this is launched for comparison purpose only, only 1 will remains after tested
 - drop old region filter from the command line and replace with the new region filter (for testing also)
 - latest commant line:
