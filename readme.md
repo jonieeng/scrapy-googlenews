@@ -1,7 +1,18 @@
 version control:
+v0.6a - YM variant
+- introduce excerpt2, excerpt3, and excerp4 -> this is launched for comparison purpose only, only 1 will remains after tested
+- drop old region filter from the command line and replace with the new region filter (for testing also)
+- latest commant line:
+`scrapy crawl gnews6a -a query=semiconductor -a start=1/1/2020 -a end=1/31/2020 -a region=china -o hello26b.csv`
+
+what can be placed under region:
+country (i.e. China, japan, russia, south+korea, united+states, etc)  **or**
+region (i.e. asia, europe, north+america, etc)
+
 v0.6
 gspider4.py
 allow extract using crawl within crawl from googlenews website
+allow conditional to do crawl within crawl on request only
 scrapy crawl gnews4 -a query=semiconductor -a start=1/1/2020 -a end=1/31/2020 -a region=US -o hello24.csv
 
 v0.5
