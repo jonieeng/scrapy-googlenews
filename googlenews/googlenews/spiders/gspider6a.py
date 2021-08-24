@@ -34,11 +34,11 @@ class gSpider(scrapy.Spider):
             yield request
 
 
-        nextPage = response.css('[id="pnnext"]').attrib['href']
-        nextLink = "https://google.com" + nextPage
+        # nextPage = response.css('[id="pnnext"]').attrib['href']
+        # nextLink = "https://google.com" + nextPage
 
-        if nextPage is not None:
-            yield response.follow(nextLink, callback=self.parse)
+        # if nextPage is not None:
+        #     yield response.follow(nextLink, callback=self.parse)
 
     def parse_excerpt_page(self, response):
         lnext = ItemLoader(item=response.meta['item'], response=response)
