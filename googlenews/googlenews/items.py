@@ -29,9 +29,6 @@ month={
     "Dec":"12"
 }
 
-def strip_item(value):
-    excerpt = value.strip(",")
-    return excerpt
 
 # def convert_month(value):
 #     old_date = value.split("/")
@@ -61,6 +58,10 @@ def convert_pubdate(value):
     
     return new_date
 
+def strip_value(value):
+    newText1 = value.strip('...')
+    return newText1
+
 
 class GooglenewsItem(scrapy.Item):
     # define the fields for your item here like:
@@ -70,9 +71,9 @@ class GooglenewsItem(scrapy.Item):
     date = scrapy.Field(input_processor = MapCompose(remove_tags, convert_pubdate), output_processor = TakeFirst())
     source = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
     link = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
-    excerpt2 = scrapy.Field(input_processor = MapCompose(strip_item, remove_tags))
-    excerpt3 = scrapy.Field(input_processor = MapCompose(strip_item, remove_tags))
-    excerpt4 = scrapy.Field(input_processor = MapCompose(strip_item, remove_tags))
+    excerpt = scrapy.Field(input_processor = MapCompose(strip_value))
+    # excerpt3 = scrapy.Field(input_processor = MapCompose(strip_item, remove_tags))
+    # excerpt4 = scrapy.Field(input_processor = MapCompose(strip_item, remove_tags))
     # start = scrapy.Field(input_processor = MapCompose(convert_month), output_processor = TakeFirst())
     # end = scrapy.Field(input_processor = MapCompose(convert_month), output_processor = TakeFirst())
     

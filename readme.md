@@ -1,4 +1,14 @@
 version control:
+##### v0.6b - Edward variant  
+- Install dependencies : `pip install newspaper3k`
+- File changes:
+	- ADD gspider6b.py
+	- REPLACE items.py
+	- REPLACE settings.py
+- latest commant line:
+`scrapy crawl gnews6b -a query=semiconductor -a start=1/1/2020 -a end=1/31/2020 -a region=china -o hello06b.csv`
+
+
 ##### v0.6a - YM variant
 - File changes:
 	- ADD gspider6a.py
