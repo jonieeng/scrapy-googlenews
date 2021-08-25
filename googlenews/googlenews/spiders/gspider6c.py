@@ -3,6 +3,7 @@ from googlenews.items import GooglenewsItem
 from scrapy.loader import ItemLoader
 import nltk
 from newspaper import Article
+from textblob import TextBlob
 
 class gSpider(scrapy.Spider):
     nltk.download('punkt')
@@ -25,7 +26,7 @@ class gSpider(scrapy.Spider):
                 article.download()
                 article.parse()
                 article.nlp()
-                summary = {article.summary}
+                summary = article.summary
 
             except:
                 summary = articles.css('div.Y3v8qd::text').get()
@@ -47,9 +48,3 @@ class gSpider(scrapy.Spider):
 
             yield l.load_item()
 
-
-        nextPage = response.css('[id="pnnext"]').attrib['href']
-        nextLink = "https://google.com" + nextPage
-
-        if nextPage is not None:
-            yield response.follow(nextLink, callback=self.parse)
