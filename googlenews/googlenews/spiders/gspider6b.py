@@ -26,16 +26,16 @@ class gSpider(scrapy.Spider):
                 article.parse()
                 article.nlp()
                 summary = {article.summary}
-                new_summary = summary.replace("â€™","'")
+
             except:
                 summary = articles.css('div.Y3v8qd::text').get()
-                new_summary = summary.replace("â€™","'")
+
             # summarizer end here
 
             l = ItemLoader(item = GooglenewsItem(), selector=articles)
 
             l.add_css('title', 'div.JheGif.nDgy9d')
-            l.add_value('excerpt', new_summary)
+            l.add_value('excerpt', summary)
             # l.add_css('excerpt', 'div.Y3v8qd')
             l.add_css('source','div.XTjFC.WF4CUc')
             l.add_css('date', 'span.WG9SHc span')
@@ -47,9 +47,3 @@ class gSpider(scrapy.Spider):
 
             yield l.load_item()
 
-
-        nextPage = response.css('[id="pnnext"]').attrib['href']
-        nextLink = "https://google.com" + nextPage
-
-        if nextPage is not None:
-            yield response.follow(nextLink, callback=self.parse)

@@ -1,0 +1,44 @@
+query,region,title,excerpt,date,source,link
+semiconductor,US,"U.S. chipmaker invests $4 billion in Singapore, even as Congress tries to 
+lure manufacturers home","Singapore is trying to do what no other country has done: pivot away from COVID-zero.
+Will it work?",2021-6-22,Fortune,https://fortune.com/2021/06/23/global-foundries-singapore-investment-global-chip-shortage-semiconductor-shortage/
+semiconductor,US,U.S. chip foundry announces new manufacturing plant in Singapore,"Michaela Rehle | ReutersSINGAPORE — U.S.-headquartered semiconductor manufacturer GlobalFoundries announced Tuesday that it will build a new fabrication plant in Singapore to meet the unprecedented global demand for chips.
+The new facility will be developed in partnership with the Singapore Economic Development Board and with co-investments from committed customers, GlobalFoundries said.
+A global shortage of semiconductor microchips is causing havoc, delaying car production and affecting operations at some of the largest consumer electronics manufacturers.
+A virtual groundbreaking ceremony for the plant was attended by Singapore's Transport Minister S Iswaran as well as Mubadala Investment Company Managing Director and Group CEO Khaldoon Khalifa Al Mubarak, among others.
+Mubadala, a United Arab Emirates state investment company, owns GlobalFoundries",2021-6-22,CNBC,https://www.cnbc.com/2021/06/22/globalfoundries-announces-new-singapore-plant.html
+semiconductor,US,GlobalFoundries puts $4bn into Singapore expansion,"SINGAPORE -- U.S. semiconductor giant GlobalFoundries will invest over $4 billion to expand its Singapore wafer plant and ramp up capacity as it attempts to tackle the global microchip shortage.
+When fully operational by 2024, the expansion is expected to boost GlobalFoundries' capacity to about 1.5 million wafers per year.
+Given that GlobalFoundries' manufacturing activities are spread across Asia, Europe and North America, the CEO said his company's worldwide footprint provides ""supply chain security balance.""
+Amid the global semiconductor shortage, GlobalFoundries projects that supply could lag behind demand until 2022 or later, with the rapidly increasing clamor for chips ""accelerated immensely"" by COVID.
+GlobalFoundries CEO Caulfield said the lion's share of investment will come out of the company's pockets",2021-6-22,Nikkei Asia,https://asia.nikkei.com/Business/Tech/Semiconductors/GlobalFoundries-puts-4bn-into-Singapore-expansion
+semiconductor,US,U.S. senators propose 25% tax credit for semiconductor ...,"REUTERS/Steve Marcus/File PhotoWASHINGTON, June 17 (Reuters) - A bipartisan group of U.S. senators on Thursday proposed a 25% tax credit for investments in semiconductor manufacturing as Congress works to increase U.S. chip production.
+The group did not immediately provide a cost estimate for the measure, which is on top of recent proposed semiconductor funding.
+Last week, the Senate approved $52 billion for production and research on semiconductors and telecommunications equipment.
+Raimondo anticipates government funding would generate ""$150 billion-plus"" in investment in chip production and research - including contributions from state and federal governments and private-sector firms.
+The tax credit could benefit Taiwan Semiconductor Manufacturing Co (TSMC)  , which is building a $12 billion semiconductor factory in Arizona, and Dutch chipmaker NXP Semiconductors NV (NXPI.O) as well as U.S. firms such as Intel Corp (INTC.O) and Micron Technology Inc (MU.O)",2021-6-17,Reuters,https://www.reuters.com/world/us/us-senators-propose-new-25-tax-credit-semiconductor-manufacturing-2021-06-17/
+semiconductor,US,US Senate introduces FABS Act to give tax credits to ...,"A group of Senators have put forward a bill that would give investment tax 
+credits to US semiconductor manufacturers",2021-6-18,Data Center Dynamics,https://www.datacenterdynamics.com/en/news/us-senate-introduces-fabs-act-to-give-tax-credits-to-semiconductor-manufacturers/
+semiconductor,US,Senate legislation proposed to create tax credit for US ...,"Written by John Hewitt JonesSenate lawmakers have introduced bipartisan legislation that would establish an investment tax credit for domestic semiconductor manufacturing.
+Innovation and Competition Act (USICA), which includes $52 billion in funding provision for semiconductor manufacturing, design and research.
+In January, Congress enacted the CHIPS for America Act as part of the fiscal 2021 National Defense Authorization Act (NDAA), which authorizes incentives for domestic semiconductor manufacturing and investments in chip research.
+Since then, industry groups, including the Semiconductor Industry Association, have called on leaders in Congress to enact an investment tax credit, such as the measures included in the legislation introduced on Thursday.
+According to research by the SIA and Boston Consulting Group, the share of global semiconductor manufacturing in the U.S. decreased from 39% in 1990 to 12% today",2021-6-17,FedScoop,https://www.fedscoop.com/senate-legislation-proposed-to-create-tax-credit-for-us-semiconductor-manufacturing/
+semiconductor,US,TSMC considering first chip packaging plant in US,"The new plant would carry out chip packaging, using advanced technology to integrate different types of semiconductors onto wafers.
+Innovation in packaging chips is emerging as an industry battleground for TSMC and rivals including Intel and Samsung, and this would be TSMC's first such facility outside Taiwan.
+TSMC is already building its first U.S. chip manufacturing plant in more than two decades -- a $12 billion facility in Arizona, to go into production by 2024.
+TSMC declined to comment on whether it plans to build a chip packaging plant in the U.S. but pointed to CEO C.C.
+TSMC is also building an advanced chip packaging facility in the Taiwanese city of Miaoli that is set to go into production in 2022",2021-6-11,Nikkei Asia,https://asia.nikkei.com/Business/Tech/Semiconductors/TSMC-considering-first-chip-packaging-plant-in-US
+semiconductor,US,TSMC in Arizona: Why Taiwan's chip titan is betting on the ...,"""For semiconductor manufacturing, you need a big ecosystem to get the best cost position,"" Wiseman said.
+The ongoing chip shortage, which has hit automakers, electronics makers and more, has also pushed the government to reinvigorate domestic chip manufacturing.
+Along with the shift of chip manufacturing to Asia over the past decades, the number of graduates related to chip engineering in the U.S. has diminished.
+To address this issue, Intel has been investing in education along with the Arizona state government.
+The chipmaker provides money and support to Arizona State University and is a major employer of its chip engineering graduates",2021-6-3,Nikkei Asia,https://asia.nikkei.com/Business/Tech/Semiconductors/TSMC-in-Arizona-Why-Taiwan-s-chip-titan-is-betting-on-the-desert
+semiconductor,US,Biden Needs More Than $52 Billion to Counter China in Chips,"Why did this happen?
+Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading.
+For more information you can review our Terms of Service and Cookie Policy",2021-6-9,Bloomberg.com,https://www.bloomberg.com/news/articles/2021-06-09/biden-will-need-more-than-52-billion-to-counter-china-in-chips
+semiconductor,US,GLOBALFOUNDRIES and GlobalWafers Partnering to Expand ...,"Today’s announcement expands GF’s domestic silicon wafer supply from the United States.
+As part of this growth, GF will require an increased supply of wafers like those made by GWC.
+In February 2020, GWC and GF announced intentions to collaborate closely to significantly expand GWC’s existing 300mm SOI wafer manufacturing capacity.
+Today’s announcement comes at a time when the United States is seeking to fortify and expand its semiconductor supply chain, which enables the $91 trillion world economy.
+Only 12 percent of the world’s semiconductor manufacturing capacity is in the United States",2021-6-8,Governor Parson,https://governor.mo.gov/press-releases/archive/globalfoundries-and-globalwafers-partnering-expand-semiconductor-wafer
