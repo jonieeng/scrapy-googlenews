@@ -48,8 +48,8 @@ class gSpider(scrapy.Spider):
             yield l.load_item()
 
 
-        # nextPage = response.css('[id="pnnext"]').attrib['href']
-        # nextLink = "https://google.com" + nextPage
+        nextPage = response.css('[id="pnnext"]').attrib['href']
+        nextLink = "https://google.com" + nextPage
 
-        # if nextPage is not None:
-        #     yield response.follow(nextLink, callback=self.parse)
+        if nextPage is not None:
+            yield response.follow(nextLink, callback=self.parse)
