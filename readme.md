@@ -1,5 +1,6 @@
 version control:
-##### v0.6b - Edward variant  
+##### v0.6b - Edward variant
+- This is assume you have your python environment installed and ready to use  
 - Install dependencies : `pip install newspaper3k`
 - File changes:
 	- ADD gspider6b.py
@@ -10,6 +11,7 @@ version control:
 
 
 ##### v0.6a - YM variant
+- This is assume you have your python environment installed and ready to use  
 - File changes:
 	- ADD gspider6a.py
 	- REPLACE items.py
