@@ -71,7 +71,7 @@ class GooglenewsItem(scrapy.Item):
     date = scrapy.Field(input_processor = MapCompose(remove_tags, convert_pubdate), output_processor = TakeFirst())
     source = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
     link = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
-    excerpt = scrapy.Field(input_processor = MapCompose(strip_value))
+    excerpt = scrapy.Field(input_processor = MapCompose(remove_tags,strip_value))
     # excerpt3 = scrapy.Field(input_processor = MapCompose(strip_item, remove_tags))
     # excerpt4 = scrapy.Field(input_processor = MapCompose(strip_item, remove_tags))
     # start = scrapy.Field(input_processor = MapCompose(convert_month), output_processor = TakeFirst())
