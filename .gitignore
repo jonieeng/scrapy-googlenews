@@ -1,2 +1,3 @@
 # dependencies
-/.env
+\.env
+\googlenews\googlenews\spiders\gspider6b.py
