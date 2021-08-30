@@ -2,7 +2,7 @@ version control:
 ##### v0.7 - post 27/08/2021 variant
 - This is assume you have your python environment installed with all depdendencies from version 0.6b and eveyrthing is ready to use 
 - File changes:
-	- ADD gspider6c.py
+	- ADD gspider7.py
 - Instead of imposing date range into the search url, the date is put under loop on daily basis. 
 - Parameter is changed in the code from line 14 to line 18:  
 ```    
