@@ -3,14 +3,25 @@ from googlenews.items import GooglenewsItem
 from scrapy.loader import ItemLoader
 import nltk
 from newspaper import Article
+import datetime
 
 class gSpider(scrapy.Spider):
     nltk.download('punkt')
+    name= 'gnews7'
+    delta = datetime.timedelta(days=1)
 
-    name= 'gnews6b'
+    # Change Parameter Here, 
+    startDate =  datetime.date(2020, 1, 1)
+    endDate = datetime.date(2020, 1, 3)
+    region1 = "china"
+    region2 = "CN"
+    query = "semiconductor"
+
     def start_requests(self):
-        yield scrapy.Request(f'https://www.google.com/search?q={self.region}+{self.query}&rlz=1C1ONGR_enSG933SG933&tbs=cdr:1,cd_min:{self.start},cd_max:{self.end},sbd:1&tbm=nws&sxsrf=ALeKk01aflpQNP1ZZ_T4be6c1j0AaGca-g:1629088758656&source=lnt&sa=X&ved=2ahUKEwiVoJHG3LTyAhUIA3IKHUJTA3gQpwV6BAgHECw&biw=1920&bih=969&dpr=1')
-    
+        while self.startDate <= self.endDate:
+            activeDate = self.startDate.strftime("%m/%d/%Y")
+            yield scrapy.Request(f'https://www.google.com/search?q={self.region1}+{self.query}&rlz=1C1ONGR_en{self.region2}933SG933&tbs=cdr:1,cd_min:{activeDate},cd_max:{activeDate},sbd:1&tbm=nws&sxsrf=ALeKk01aflpQNP1ZZ_T4be6c1j0AaGca-g:1629088758656&source=lnt&sa=X&ved=2ahUKEwiVoJHG3LTyAhUIA3IKHUJTA3gQpwV6BAgHECw&biw=1920&bih=969&dpr=1')
+            self.startDate += self.delta
     
     def parse(self, response):
 
@@ -41,7 +52,7 @@ class gSpider(scrapy.Spider):
             l.add_value('query', self.query)
             # l.add_value('start', self.start)
             # l.add_value('end',self.end)
-            l.add_value('region', self.region)
+            l.add_value('region', self.region1)
             l.add_css('link','a::attr(href)')
 
             yield l.load_item()

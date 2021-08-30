@@ -1,4 +1,31 @@
 version control:
+##### v0.7 - post 27/08/2021 variant
+- This is assume you have your python environment installed with all depdendencies from version 0.6b and eveyrthing is ready to use 
+- File changes:
+	- ADD gspider6c.py
+- Instead of imposing date range into the search url, the date is put under loop on daily basis. 
+- Parameter is changed in the code from line 14 to line 18:  
+```    
+	# Change Parameter Here, 
+    startDate =  datetime.date(2020, 1, 1)
+    endDate = datetime.date(2020, 1, 3)
+    region1 = "china"
+    region2 = "CN"
+    query = "semiconductor"
+```  
+- for `startDate` and `endDate`, change the value inside the bracket with the format (yyyy, m, d)
+- `region1` always in **lowercase** full name (i.e. china, europe, united+states, south+korea, etc) and `region2` alwats in short forms (i.e. CN, GB, US, KR, etc)
+- I suggest for `region1` and `region2` to be used in pair (e.g.: singapore & SG, china & CN, united+states & US, etc)
+- `query` is as per usual, however, I suggest we stick with **semiconductor** for now. 
+- What to check:
+	- **Region** -> Kindly check whether any "leaking" news (i.e. news unrelated to that particular region)
+	- **Excerpt** -> which source gives excerpt that does not make sense (i.e. subscription request, ads, something gibberish, etc)
+- Things to take note:
+	- While it is possible to check on one month range like what we did on earlier version, I suggest to gradually increase, to avoid the potential of scraping "too much" from Google and get your IP banned
+	- Also take note, the current command line to run this version is simplified into: `scrapy crawal gnews7 -o <filename.csv>`
+	- Previous version still run as per usual with its respective command line. 
+
+
 ##### v0.6b - Edward variant
 - This is assume you have your python environment installed and ready to use  
 - Install dependencies : `pip install newspaper3k`
