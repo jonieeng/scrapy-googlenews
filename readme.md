@@ -22,7 +22,7 @@ version control:
 	- **Excerpt** -> which source gives excerpt that does not make sense (i.e. subscription request, ads, something gibberish, etc)
 - Things to take note:
 	- While it is possible to check on one month range like what we did on earlier version, I suggest to gradually increase, to avoid the potential of scraping "too much" from Google and get your IP banned
-	- Also take note, the current command line to run this version is simplified into: `scrapy crawal gnews7 -o <filename.csv>`
+	- Also take note, the current command line to run this version is simplified into: `scrapy crawl gnews7 -o <filename.csv>`
 	- Previous version still run as per usual with its respective command line. 
 
 
