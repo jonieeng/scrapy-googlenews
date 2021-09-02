@@ -1,4 +1,15 @@
 version control:
+##### v0.8a - minor update
+- Same like 0.8 except these:
+	- fix region2 to SG
+	- swap order of search words
+	- cleaner tokenize word
+- File changes
+	- ADD gspider8a.py
+	- REPLACE items.py
+	- REPLACE settings.py
+	- REPLACE pipelines.py
+
 ##### v0.8 - major update
 - This is assume you have your python environment installed with all depdendencies from version 0.7 and eveyrthing is ready to use. 
 - Now allow sending data to our mySQL server. Don't forget to change mysql server on `pipelines.py` on line 18 to line 22:  

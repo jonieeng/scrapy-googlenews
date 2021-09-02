@@ -67,7 +67,6 @@ class GooglenewsItem(scrapy.Item):
     # define the fields for your item here:
     query = scrapy.Field()
     region = scrapy.Field()
-    ccode = scrapy.Field()
     title = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
     date = scrapy.Field(input_processor = MapCompose(remove_tags,convert_pubdate), output_processor = TakeFirst())
     source = scrapy.Field(input_processor = MapCompose(remove_tags), output_processor = TakeFirst())
