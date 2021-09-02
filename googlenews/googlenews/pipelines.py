@@ -18,7 +18,7 @@ class GooglenewsPipeline(object):
             user='',
             password='',
             host='',
-            port= ,
+            port=,
             database=''
         )
 
@@ -26,11 +26,10 @@ class GooglenewsPipeline(object):
     
     # 'start','end','query', 'region', 'title', 'excerpt', 'date', 'source', 'link' 
     def create_table(self):
-        self.curr.execute("""CREATE TABLE IF NOT EXISTS semiconductor(
+        self.curr.execute("""CREATE TABLE IF NOT EXISTS semiconductor8a(
             id INT AUTO_INCREMENT PRIMARY KEY,
             query TEXT,
             region VARCHAR(255),
-            ccode VARCHAR(16),
             title TEXT,
             excerpt TEXT,
             date DATE,
@@ -47,11 +46,10 @@ class GooglenewsPipeline(object):
         self.store_db(item)
 
     def store_db(self, item):
-        myquery = """INSERT into semiconductor
+        myquery = """INSERT into semiconductor8a
         (
             query,
             region,
-            ccode,
             title,
             excerpt,
             date,
@@ -63,12 +61,11 @@ class GooglenewsPipeline(object):
             sentiment,
             subjective
         )
-        values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+        values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
         """
         value = (
             item['query'][0],
             item['region'][0],
-            item['ccode'][0],
             item['title'],
             item['excerpt'][0],
             item['date'],
