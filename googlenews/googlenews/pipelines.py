@@ -31,11 +31,11 @@ class GooglenewsPipeline(object):
     
     def create_connection(self):
         self.conn = mysql.connector.connect(
-            user='fintechlab',
-            password='FinTechLab',
-            host='137.132.92.94',
-            port=12865,
-            database='b10_fintech5c',
+            user='',
+            password='',
+            host='',
+            port=,
+            database='',
         )
 
         self.curr = self.conn.cursor()
