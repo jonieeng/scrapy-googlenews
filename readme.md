@@ -1,4 +1,7 @@
 version control:
+##### v0.8b - minor update
+- update all CSS Structure to cater for Google recent changes on CSS on 16-09-2021
+
 ##### v0.8a(improved) - minor update
 - File changes:
 	- REPLACE items.py
