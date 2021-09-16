@@ -1,4 +1,13 @@
 version control:
+##### v0.8a(improved) - minor update
+- File changes:
+	- REPLACE items.py
+	- REPLACE pipelines.py
+- Prevent duplicate entry across multiple crawler. 
+	- It is done by checking MySql for duplicate data prior inserting data to mySQL
+	- also checking on duplicate from all articles crawled 
+- Fixed date issue on crawling from 1 month ago.
+
 ##### v0.8a - minor update
 - Same like 0.8 except these:
 	- fix region2 to SG
@@ -6,12 +15,14 @@ version control:
 	- cleaner tokenize word
 - File changes
 	- ADD gspider8a.py
-	- REPLACE items.py
-	- REPLACE settings.py
-	- REPLACE pipelines.py
 
+	- REPLACE pipelines.py 
+- For NLTK download 
+	- For line 11 on gspider8a.py change it to nltk.download() and uncomment it. Run it once and comment it again
+			
 ##### v0.8 - major update
-- This is assume you have your python environment installed with all depdendencies from version 0.7 and eveyrthing is ready to use. 
+- This is assume you have your python environment installed with all dependencies from version 0.7 and eveyrthing is ready to use. 
+- TYPE pip install mysql-connector-python (for first time download) 
 - Now allow sending data to our mySQL server. Don't forget to change mysql server on `pipelines.py` on line 18 to line 22:  
 ```
 	user='',
@@ -35,7 +46,7 @@ version control:
 - Latest command to run `scrapy crawl gnews8`
 
 ##### v0.7 - post 27/08/2021 variant
-- This is assume you have your python environment installed with all depdendencies from version 0.6b and eveyrthing is ready to use 
+- This is assume you have your python environment installed with all dependencies from version 0.6b and eveyrthing is ready to use 
 - File changes:
 	- ADD gspider7.py
 - Instead of imposing date range into the search url, the date is put under loop on daily basis. 
