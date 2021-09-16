@@ -9,7 +9,7 @@ import string
 
 class gSpider(scrapy.Spider):
     # nltk.download('punkt')
-    name = 'gnews8a'
+    name = 'gnews8b'
     delta = datetime.timedelta(days=1)
 
     # this is where we put skipped list
